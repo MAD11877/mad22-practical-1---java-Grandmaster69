@@ -27,6 +27,35 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int num = in.nextInt();
+    List numlist = new ArrayList();
+    for (int i = 0; i < num; i++)
+    {
+      System.out.print("Enter integer: ");
+      int num2 = in.nextInt();
+      numlist.add(num2);
+    }
+    int Maxnum = 0;
+    int Maxcount = 0;
+    for (int i = 0; i < numlist.size(); i++)
+    {
+      int count = 0;
+      for (int j =0; j < numlist.size(); j++)
+      {
+        if (numlist.get(i) == numlist.get(j))
+        {
+          count++;
+        }
+      }
+      
+      if (count > Maxcount)
+      {
+        Maxcount = count;
+        Maxnum = (int) numlist.get(i);
+      }
+    }
+    System.out.print(Maxnum);
     
   }
 }
