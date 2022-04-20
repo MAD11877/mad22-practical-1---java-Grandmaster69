@@ -29,12 +29,12 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter a number: ");
+    System.out.print("");
     int num = in.nextInt();
     List numlist = new ArrayList();
     for (int i = 0; i < num; i++)
     {
-      System.out.print("Enter integer: ");
+      System.out.print("");
       int num2 = in.nextInt();
       numlist.add(num2);
     }
