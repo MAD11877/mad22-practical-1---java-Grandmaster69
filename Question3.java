@@ -13,6 +13,6 @@ public class Question3
     Scanner in = new Scanner(System.in);
     System.out.print("Enter an integer: ");
     int num = in.nextInt();
-    System.out.printf("The output is: " +num*num);
+    System.out.println("The output is: " +num*num);
   }
 }
